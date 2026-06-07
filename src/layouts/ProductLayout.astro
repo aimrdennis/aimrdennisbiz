@@ -1,4 +1,5 @@
 ---
+import SeoHead from './ProductLayout/Seo.astro';
 import Header from './ProductLayout/Header.astro';
 import SecHeader from './ProductLayout/SecHeader.astro';
 import SecFooter from './ProductLayout/SecFooter.astro';
@@ -8,12 +9,9 @@ import Scripts from './ProductLayout/Scripts.astro';
 import Topbar from './ProductLayout/Topbar.astro';
 import Categories from './ProductLayout/Categories.astro';
 
-import SeoHead from '../components/SeoHead.astro';
 import { SITE } from '../lib/site';
 
 const {
-  title = 'AI PRINT',
-  description = 'Modern marketplace',
   slug = '',
   product = {}
 } = Astro.props;
@@ -24,12 +22,12 @@ const {
 <html lang="en">
 
 <head>
-
 <SeoHead
-  title={title}
-  description={description}
+  title={product.title}
+  description={product.description}
+  image={product.image}
   slug={slug}
-  amp={SITE.url(`/product/${slug}/amp/`)}
+amp={SITE.url(`/product/${slug}/amp/`)}
 />
 
 <script
@@ -52,22 +50,23 @@ type="application/ld+json"
 </head>
 
 <body>
+<Topbar product={product} slug={slug} />
 
-<Topbar />
+<Header product={product} slug={slug} />
 
-<Header />
+<SecHeader product={product} slug={slug} />
 
-<SecHeader />
+<Categories product={product} slug={slug} />
 
-<Categories />
+
 
 <main class="container">
   <slot />
 </main>
 
-<SecFooter />
+<SecFooter product={product} slug={slug} />
 
-<Footer />
+<Footer product={product} slug={slug} />
 
 <Scripts />
 
