@@ -1,10 +1,17 @@
 ---
+import { SITE } from '../../lib/site';
+
 const {
   title,
   description,
   image,
-  product
+  product = {},
+  slug = '',
+  amp
 } = Astro.props;
+
+const canonical =
+  SITE.url(`/product/${slug}/`);
 ---
 
 <meta charset="UTF-8" />
@@ -22,6 +29,31 @@ const {
 />
 
 <meta
+  name="author"
+  content={SITE.author}
+/>
+
+<link
+  rel="canonical"
+  href={canonical}
+/>
+
+<link
+  rel="amphtml"
+  href={amp}
+/>
+
+<meta
+  property="og:site_name"
+  content={SITE.title}
+/>
+
+<meta
+  property="og:type"
+  content="product"
+/>
+
+<meta
   property="og:title"
   content={title}
 />
@@ -36,24 +68,55 @@ const {
   content={image}
 />
 
+<meta
+  property="og:url"
+  content={canonical}
+/>
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+/>
+
+<meta
+  name="twitter:title"
+  content={title}
+/>
+
+<meta
+  name="twitter:description"
+  content={description}
+/>
+
+<meta
+  name="twitter:image"
+  content={image}
+/>
+
 <script
   type="application/ld+json"
   set:html={JSON.stringify({
-    '@context':'https://schema.org',
-    '@type':'Product',
+    '@context': 'https://schema.org',
+    '@type': 'Product',
 
-    name:product.title,
+    name: product.title,
 
-    image:product.image,
+    image: product.image,
 
-    description:product.description,
+    description: product.description,
 
-    category:product.category,
+    category: product.category,
 
-    offers:{
-      '@type':'Offer',
-      price:product.price?.replace('$',''),
-      priceCurrency:'USD'
+    sku: product.sku,
+
+    offers: {
+      '@type': 'Offer',
+      price: product.price?.replace('$', ''),
+      priceCurrency: 'USD',
+      availability:
+        product.stock > 0
+          ? 'https://schema.org/InStock'
+          : 'https://schema.org/OutOfStock'
     }
   })}
 />
