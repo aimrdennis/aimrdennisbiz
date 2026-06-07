@@ -30,6 +30,8 @@ const product = defineCollection({
 
     oldPrice: z.string().optional(),
 
+    afflink: z.string().optional(),
+
     image: z.string(),
 
     category: z.string(),
