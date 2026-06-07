@@ -46,8 +46,8 @@ const { product, slug } = Astro.props;
       trackLongTasks: true,
       defaultPrivacyLevel: 'mask-user-input',
       allowedTracingUrls: [
-        '{product.canonical}',
-        '{product.canonical}'
+        {product.canonical},
+        {product.canonical}
       ]
     });
   })
@@ -95,7 +95,7 @@ const { product, slug } = Astro.props;
 <meta property="og:price:currency" content="USD">
 <meta property="og:type" content="website">
 <meta property="og:url" content={product.canonical}>
-<meta property="og:image" content="{product.image}">
+<meta property="og:image" content={product.image}>
 <meta property="og:site_name" content={product.site_name}>
 <meta property="product:price:amount" content="16.00">
 <meta property="product:brand" content={product.site_name}>
@@ -163,6 +163,7 @@ ga('require', 'GTM-KL7BC3L');
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- End Google Analytics -->
+
 
 <script
   type="application/ld+json"
