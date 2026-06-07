@@ -1,6 +1,17 @@
 ---
-import { SITE } from "../../lib/site";
-const { product, slug } = Astro.props;
+import { SITE } from '../../lib/site';
+
+const {
+  title,
+  description,
+  image,
+  product = {},
+  slug = '',
+  amp
+} = Astro.props;
+
+const canonical =
+  SITE.url(`/product/${slug}/`);
 ---
 <p>{product.afflink}</p>
 <h1>{product.title}</h1>
