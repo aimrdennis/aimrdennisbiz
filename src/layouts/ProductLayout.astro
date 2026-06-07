@@ -1,5 +1,7 @@
 ---
 import Header from './ProductLayout/Header.astro';
+import SecHeader from './ProductLayout/SecHeader.astro';
+import SecFooter from './ProductLayout/SecFooter.astro';
 import Footer from './ProductLayout/Footer.astro';
 import Scripts from './ProductLayout/Scripts.astro';
 
@@ -55,11 +57,15 @@ type="application/ld+json"
 
 <Header />
 
+<SecHeader />
+
 <Categories />
 
 <main class="container">
   <slot />
 </main>
+
+<SecFooter />
 
 <Footer />
 
