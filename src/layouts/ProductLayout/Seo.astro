@@ -1,17 +1,5 @@
 ---
-import { SITE } from '../../lib/site';
-
-const {
-  title,
-  description,
-  image,
-  product = {},
-  slug = '',
-  amp
-} = Astro.props;
-
-const canonical =
-  SITE.url(`/product/${slug}/`);
+const { product, slug } = Astro.props;
 ---
 
 <meta charset='utf-8'>
