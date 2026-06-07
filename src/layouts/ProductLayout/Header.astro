@@ -2,8 +2,6 @@
 const { product, slug } = Astro.props;
 ---
 
-
-
 <header class="vc-header jsHead" data-controller="rudderstack--link-clicked navigation--header navigation--tray-trigger sticky-header" data-rudderstack--link-clicked-location-value="nav-main" data-navigation--header-target="header" data-navigation--tray-trigger-containers--drawer-component-outlet=".jsHeaderTray" data-navigation--tray-trigger-navigation--cart-outlet=".jsCartTray" data-action="showElement@document-&gt;sticky-header#showHeader" data-sticky-header-containers--banner-outlet=".containers--banner" data-sticky-header-rendering-rails-ctrl-value="product_pages"><div class='vc-header__container wrapper'>
 <div class='vc-header__menu-container'>
 <button type="button" class="btn vc-header__shop-button btn--no-space tp-btn--medium btn--no-background" data-rudderstack-event-type="cta" data-action="rudderstack--link-clicked#track navigation--tray-trigger#openTray" data-button-label="Shop" data-targeted-tray="Shop"><span class="teepublicon teepublicon--primary-400 teepublicon-background--transparent"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="28" height="28" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M4 9a3 3 0 0 1 3-3h34a3 3 0 1 1 0 6H7a3 3 0 0 1-3-3Zm0 15a3 3 0 0 1 3-3h34a3 3 0 1 1 0 6H7a3 3 0 0 1-3-3Zm0 15a3 3 0 0 1 3-3h34a3 3 0 1 1 0 6H7a3 3 0 0 1-3-3Z" clip-rule="evenodd"></path></svg></span>
@@ -16,8 +14,8 @@ const { product, slug } = Astro.props;
 <div class="vc-header-logo"><a aria-label="{title} Link" title="{title}" href={product.canonical} class="link vc-header-logo__wrapper link--1 link--default">
 <span class='link__content'>
 <picture>
-<source srcset='{product.logoimage}' type='image/webp'>
-<img class="vc-header-logo__image" src="{product.logoimage}" />
+<source srcset={product.logoimage} type='image/webp'>
+<img class="vc-header-logo__image" src={product.logoimage} />
 </picture>
 
 
