@@ -2,7 +2,7 @@
 title: "Cara Menggunakan AI Mr Ferdy"
 
 description: "Panduan lengkap cara menggunakan AI Mr Ferdy untuk meningkatkan produktivitas, automasi pekerjaan digital, dan efisiensi bisnis."
-
+afflink: "https://example.dev/"
 price: "$29"
 
 oldPrice: "$49"
