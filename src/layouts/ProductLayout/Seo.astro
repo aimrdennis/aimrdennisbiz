@@ -1,19 +1,18 @@
 ---
 const { product, slug } = Astro.props;
 ---
-
 <meta charset='utf-8'>
 <title>{title}</title>
-<link rel="icon" type="image/x-icon" href="{product.favicon}" />
-<link rel="apple-touch-icon" href="{product.favicon}">
-<link rel="canonical" href="{product.canonical}">
-<link rel="amphtml" href="{product.canonical}/amp" />
-<link rel="alternate" hreflang="id-id" href="{product.canonical}/amp"/>
-<link rel="alternate" href="{product.canonical}/amp"/>
-<link rel="alternate" hreflang="id" href="{product.canonical}/amp"/>
-<link rel="alternate" hreflang="en" href="{product.canonical}/amp"/>
-<link rel="alternate" hreflang="x-default" href="{product.canonical}/amp"/>
-<link as='image' href='{image}' rel='preload'>
+<link rel="icon" type="image/x-icon" href={product.favicon} />
+<link rel="apple-touch-icon" href={product.favicon}>
+<link rel="canonical" href={product.canonical}>
+<link rel="amphtml" href={product.canonical}/amp />
+<link rel="alternate" hreflang="id-id" href={product.canonical}/amp/>
+<link rel="alternate" href={product.canonical}/amp/>
+<link rel="alternate" hreflang="id" href={product.canonical}/amp/>
+<link rel="alternate" hreflang="en" href={product.canonical}/amp/>
+<link rel="alternate" hreflang="x-default" href={product.canonical}/amp/>
+<link as='image' href={product.image}' rel='preload'>
 <link crossorigin href='https://fonts.googleapis.com' rel='preconnect'>
 <link crossorigin href='https://ajax.googleapis.com' rel='preconnect'>
 <link crossorigin href='https://www.googletagmanager.com' rel='preconnect'>
@@ -87,24 +86,24 @@ const { product, slug } = Astro.props;
 
 <meta content='F9EF52AA90C6458518CEE48CF835744E' name='msvalidate.01'>
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
-<meta content='{product.site_name}' name='cloudinary_cloud_name'>
+<meta content={product.site_name} name='cloudinary_cloud_name'>
 <meta content='index, follow' name='robots'>
-<meta content='{description}' name='description'>
+<meta content={product.description} name='description'>
 <meta property="og:title" content="{title}">
-<meta property="og:description" content="{description}">
+<meta property="og:description" content={product.description}>
 <meta property="og:price:amount" content="16.00">
 <meta property="og:price:currency" content="USD">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{product.canonical}">
-<meta property="og:image" content="{image}">
-<meta property="og:site_name" content="{product.site_name}">
+<meta property="og:url" content={product.canonical}>
+<meta property="og:image" content="{product.image}">
+<meta property="og:site_name" content={product.site_name}>
 <meta property="product:price:amount" content="16.00">
-<meta property="product:brand" content="{product.site_name}">
+<meta property="product:brand" content={product.site_name}>
 <meta property="product:price:currency" content="USD">
 <meta property="product:availability" content="in stock">
 <meta property="product:retailer_item_id" content="54469715D1V">
 <meta property="product:condition" content="new">
-<meta content='{product.site_name}' name='apple-mobile-web-app-title'>
+<meta content={product.site_name} name='apple-mobile-web-app-title'>
 
 
 <!-- Google Tag Manager -->
@@ -120,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
-  dataLayer.push({"event":"pageLoad","request__request_id":"458605a9-62ce-4d55-9a34-e7a426f498da","request__controller":"product_pages","request__action":"show","request__domain":"teepublic.com","request__base_url":"https://www.teepublic.com","request__ab_tests":{"con-3067-find-similar":"con-3067-find-similar-variant-button","con-3102-adspace-c":"con-3102-adspace-var-mugs-and-socks-c"},"request__safe_search":true,"request__referring_affiliate_id":null,"request__referring_affiliate_ua_id":null,"request__referring_affiliate_ga4_id":null,"request__referring_affiliate_network_id":null,"locale__locale":"en","locale__currency_iso":"USD","locale__gdprcookie":"all","locale__euvisitor":false,"cart__items":[],"design__design_id":54469715,"design__canvas_id":1,"design__product_id":321,"design__parent_id":"54469715D1V","design__variant_id":"19G79A1C","design__variant":"{\"Gender\":\"Male Fit\",\"Style\":\"Classic T-Shirt\",\"Color\":\"Black\"}","design__mock_image":"https://res.cloudinary.com/teepublic/image/private/s--S_P2GdrU--/t_Resized Artwork/c_crop,x_10,y_10/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_0/g_north_west,u_upload:v1462829015:production:blanks:mtl53ofohwq5goqjo9ke,x_-395,y_-325/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1702220495/production/designs/54469715_0.jpg","design__url":"{product.canonical}","design__canvas":"T-Shirt","design__canvas_canonical_name":"T-Shirt","design__design_title":"{title}","design__price":16.0,"design__price_usd":16.0,"design__price_in_currency":16.0,"design__primary_tag":"christmas-carol","design__owner_type":"designer","design__owner_id":8336,"design__on_sale":true,"design__currency_iso":"USD","design__feed_sku":null,"design__designer_name":"RetroReview","design__designer_ua_id":null,"design__designer_ga4_id":null,"design__marketing_sku":"54469715D1V19G79A1C"})
+  dataLayer.push({"event":"pageLoad","request__request_id":"458605a9-62ce-4d55-9a34-e7a426f498da","request__controller":"product_pages","request__action":"show","request__domain":"teepublic.com","request__base_url":"https://www.teepublic.com","request__ab_tests":{"con-3067-find-similar":"con-3067-find-similar-variant-button","con-3102-adspace-c":"con-3102-adspace-var-mugs-and-socks-c"},"request__safe_search":true,"request__referring_affiliate_id":null,"request__referring_affiliate_ua_id":null,"request__referring_affiliate_ga4_id":null,"request__referring_affiliate_network_id":null,"locale__locale":"en","locale__currency_iso":"USD","locale__gdprcookie":"all","locale__euvisitor":false,"cart__items":[],"design__design_id":54469715,"design__canvas_id":1,"design__product_id":321,"design__parent_id":"54469715D1V","design__variant_id":"19G79A1C","design__variant":"{\"Gender\":\"Male Fit\",\"Style\":\"Classic T-Shirt\",\"Color\":\"Black\"}","design__mock_image":"https://res.cloudinary.com/teepublic/image/private/s--S_P2GdrU--/t_Resized Artwork/c_crop,x_10,y_10/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_0/g_north_west,u_upload:v1462829015:production:blanks:mtl53ofohwq5goqjo9ke,x_-395,y_-325/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1702220495/production/designs/54469715_0.jpg","design__url":{product.canonical},"design__canvas":"T-Shirt","design__canvas_canonical_name":"T-Shirt","design__design_title":"{title}","design__price":16.0,"design__price_usd":16.0,"design__price_in_currency":16.0,"design__primary_tag":"christmas-carol","design__owner_type":"designer","design__owner_id":8336,"design__on_sale":true,"design__currency_iso":"USD","design__feed_sku":null,"design__designer_name":"RetroReview","design__designer_ua_id":null,"design__designer_ga4_id":null,"design__marketing_sku":"54469715D1V19G79A1C"})
 </script>
 
 <script>
