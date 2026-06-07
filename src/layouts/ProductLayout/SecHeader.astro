@@ -1,2 +1,9 @@
+---
+const { product, slug } = Astro.props;
+---
 
-22
+<h1>{product.title}</h1>
+
+<a href={product.afflink}>
+  Buy Now
+</a>
