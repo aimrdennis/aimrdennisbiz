@@ -13,8 +13,8 @@ export function ampTemplate(page) {
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <meta name="language" content="Indonesian">
-<meta name="keywords" content="ROBOPRAGMA, cheat slot, robot pintar, pola gacor otomatis, auto maxwin x1000, aplikasi slot gacor, apk slot auto, pola slot otomatis, maxwin x1000 terbaru">
-<meta name="author" content="ROBOPRAGMA ">
+<meta name="keywords" content="${page.site_name}, cheat slot, robot pintar, pola gacor otomatis, auto maxwin x1000, aplikasi slot gacor, apk slot auto, pola slot otomatis, maxwin x1000 terbaru">
+<meta name="author" content="${page.site_name} ">
 <meta name="geo.region" content="ID">
 <meta name="geo.country" content="Indonesia">
 <link rel="icon" href="${page.favicon}" type="image/png">
@@ -25,7 +25,7 @@ export function ampTemplate(page) {
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "ROBOPRAGMA",
+  "name": "${page.site_name}",
   "alternateName": "Apk Cheat Slot Robot Pintar Penghasil Pola Gacor Otomatis Auto Maxwin X1000",
   "description": "${page.desc}",
   "url": "${page.canonical}",
@@ -43,7 +43,7 @@ export function ampTemplate(page) {
   },
   "sameAs": [
     "${page.afflink}",
-    "https://t.me/robopragma_official",
+    "https://t.me/${page.site_name}_official",
     "https://wa.me/6281234567890"
   ],
   "address": {
@@ -61,10 +61,10 @@ export function ampTemplate(page) {
         "http://schema.org/MobileWebPlatform"
       ]
     },
-    "name": "Akses ROBOPRAGMA",
-    "description": "ROBOPRAGMA: Apk cheat slot robot pintar penghasil pola gacor otomatis auto maxwin X1000 tanpa ribet."
+    "name": "Akses ${page.site_name}",
+    "description": "${page.site_name}: Apk cheat slot robot pintar penghasil pola gacor otomatis auto maxwin X1000 tanpa ribet."
   },
-  "keywords": "ROBOPRAGMA, cheat slot, robot pintar, pola gacor otomatis, auto maxwin x1000",
+  "keywords": "${page.site_name}, cheat slot, robot pintar, pola gacor otomatis, auto maxwin x1000",
   "foundingDate": "2024",
   "areaServed": "Indonesia"
 }
@@ -73,7 +73,7 @@ export function ampTemplate(page) {
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "ROBOPRAGMA - Apk Cheat Slot Robot Pintar Pola Gacor Otomatis Auto Maxwin X1000",
+  "name": "${page.site_name} - Apk Cheat Slot Robot Pintar Pola Gacor Otomatis Auto Maxwin X1000",
   "url": "${page.canonical}",
   "description": "${page.desc}",
   "inLanguage": "id"
@@ -85,7 +85,7 @@ export function ampTemplate(page) {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Beranda","item":"${page.canonical}"},
-    {"@type":"ListItem","position":2,"name":"ROBOPRAGMA","item":"${page.afflink}"}
+    {"@type":"ListItem","position":2,"name":"${page.site_name}","item":"${page.afflink}"}
   ]
 }
 </script>
@@ -100,9 +100,9 @@ export function ampTemplate(page) {
 <body>
 <main class="page">
   <header class="topbar">
-    <a class="brand" href="${page.canonical}" aria-label="ROBOPRAGMA">
-      <span class="logo"><amp-img src="${page.favicon}" width="46" height="46" layout="fixed" alt="ROBOPRAGMA"></amp-img></span>
-      <span><span class="brand-name">ROBOPRAGMA</span><span class="brand-sub">Official AMP</span></span>
+    <a class="brand" href="${page.canonical}" aria-label="${page.site_name}">
+      <span class="logo"><amp-img src="${page.favicon}" width="46" height="46" layout="fixed" alt="${page.site_name}"></amp-img></span>
+      <span><span class="brand-name">${page.site_name}</span><span class="brand-sub">Official AMP</span></span>
     </a>
     <a class="top-btn" href="${page.afflink}" target="_blank" rel="noreferrer noopener">Akses</a>
   </header>
@@ -115,7 +115,7 @@ export function ampTemplate(page) {
       <amp-img src="${page.image}" width="500" height="500" layout="responsive" alt="${page.title}"></amp-img>
     </div>
     <div class="cta-row">
-      <a class="btn btn-primary" href="${page.afflink}" target="_blank" rel="noreferrer noopener">Cheat ROBOPRAGMA</a>
+      <a class="btn btn-primary" href="${page.afflink}" target="_blank" rel="noreferrer noopener">Cheat ${page.site_name}</a>
       <a class="btn btn-secondary" href="${page.afflink}" target="_blank" rel="noreferrer noopener">Daftar Maxwin</a>
     </div>
   </section>
@@ -123,16 +123,16 @@ export function ampTemplate(page) {
 ${page.content}
 
   <div class="sticky-cta">
-    <a href="${page.afflink}" target="_blank" rel="noreferrer noopener">Akses Cheat ROBOPRAGMA Sekarang</a>
+    <a href="${page.afflink}" target="_blank" rel="noreferrer noopener">Akses Cheat ${page.site_name} Sekarang</a>
   </div>
 
   <footer>
-    © 2026 ROBOPRAGMA. Semua tautan utama diarahkan ke akses resmi.
+    © 2026 ${page.site_name}. Semua tautan utama diarahkan ke akses resmi.
   </footer>
 </main>
 
 <div itemscope itemtype="https://schema.org/Organization" class="hidden">
-  <meta itemprop="name" content="ROBOPRAGMA - Apk Cheat Slot Robot Pintar Penghasil Pola Gacor Otomatis Auto Maxwin X1000">
+  <meta itemprop="name" content="${page.site_name} - Apk Cheat Slot Robot Pintar Penghasil Pola Gacor Otomatis Auto Maxwin X1000">
   <meta itemprop="description" content="${page.desc}">
   <meta itemprop="url" content="${page.canonical}">
   <meta itemprop="logo" content="${page.favicon}">
