@@ -7,7 +7,7 @@ export const home = {
 
   desc: "Ai Mr Dennis dalam konteks teknologi dan komputer, merujuk pada tindakan mengakses, mengubah, atau memanipulasi sistem komputer atau perangkat elektronik lainnya tanpa izin atau akses yang sah..",
 
-  canonical: "https://aimrdennis.biz/",
+  canonical: "https://aimrdennis.biz",
 
   afflink: "https://apk.mrdennis.workers.dev/",
 
