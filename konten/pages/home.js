@@ -11,9 +11,9 @@ export const home = {
 
   afflink: "https://apk.mrdennis.workers.dev/",
 
-  logoimage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv5V8YI68qZEvBAcm9ns4d3_odUsCUnmVY74NEUvS2ad1XsRsGhYaI35RwdcKqjiuZKviHwW0N97KoFlCxyMUGK6_cX2521_Pw3XHmxejtqn3RXskZrU_xhQL-hxiqemS5JlJqgcil4mXYZSbQ_hyphenhyphen5aKWnKN6beRj9CiaL_7C3NlOWIVcEV_e4eLxkKV7b/s1600/logo-den-1.webp",
+  logoimage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEPJwQ446MNoDeiqyLIhyphenhyphenvUoY0FSdTFM5gLAq_4Fbc6kzJejLD6Ssc7gmlmnIWYj9IDrwvXFOmTiHei03rbbLmY57eQkJ18Ysu48Pf40PtG9DkoQJkaY43tGdW9n8IZoT4-qY4F8gznqZ0yghyeiwy6FF4Z5zcwtl5vGAX20vkXo70EUmTRfizbQYQa39M/s1600/logo.png",
 
-  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWFfArsRyLiWyAJKTTssYYkMuBfx7k3cYRlWUzAlpTXjV6Hqr8JwviqG2csp8SMb-ADl8a0Bmxt2xx8Ws4OeCfT8I82h_gfdwhMLOLGOys8gbWWHsz7P0723vLFWyxPe36VpLwLOtchkgxYr3hAgdxiniKUDW5LjZrJVBLQKimp92s9Os_9VaJ79YgDyn0/s1600/mr-dennis-1.webp",
+  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD7yLk8XCWOj6QkCcsnoYdFALdHZMwJ24TgecaE98e9szB1ncX6Grp1qoNZwxlx2K2TFpBXhy7tbHMjvnrkvB0rTNPOygpDk4rt-92_tvGBmQ1eYlKQuQkxlnaSHbsZHgWAcUpsV9Pa-Z34Z1CwxNzaMtbZYU6iZ8hdp7vt8qtPfk_8-jrG8BOXDcqWhsT/s1600/bnrs.png",
 
   favicon: "https://aimrferdycheat.blogspot.com/favicon.ico",
 
